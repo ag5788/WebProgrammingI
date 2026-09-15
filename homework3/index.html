@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Aiden - Homework 3</title>
+    <style>
+      table, td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+      }
+      .header {
+        text-align: center;
+        grid-area: header;
+      }
+      .sidebar {
+        grid-area: "sidebar";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .content {
+        grid-area: content;
+      }
+      .footer {
+        grid-area: footer;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      p {
+        padding: 2px 0 2px 8px;
+      }
+      .red {
+        color: red;
+      }
+      .size {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">
+        <h1>Aiden</h1>
+      </div>
+      <div class="sidebar">
+        <a href="#intro">Intro</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education and Experience</a>
+        <a href="#download">Download Me</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="content">
+        Computer Science Student
+        <h2 id="intro">Intro</h2>
+        <p>
+          I am a Computer Science student who has been interested in computers for a long time. <br>
+          I have worked on many personal projects, and some freelancing.
+        </p>
+        <h2 id="skills">Skills</h2>
+        <p>
+          I can do <b>bold</b>, <i>italics</i>, <span class="red">colors</span>, and <span class="size">font size</span>.
+          <br>
+          Outside of the class, I have done many things with web hosting, serverless computing,
+          and have made a few AI agents both for myself and clients.
+        </p>
+        <div style="display: flex; flex-direction: column-reverse; align-items: center;">
+          <span>This</span>
+          <span>flexbox</span>
+          <span>uses</span>
+          <span>flex-direction: column-reverse</span>
+          <span>and align-items: center</span>
+        </div>
+        <h2 id="projects">Projects</h2>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); ">
+          <div>
+            <a href="https://ag5788.github.io/WebProgrammingI/homework1/">
+              <b>Homework 1 - Personal Portfolio</b> (previous version of this page)
+            </a>
+            <br>
+            A page featuring a basic intro, and some basic html styling tags.
+          </div>
+          <div>
+            <a href="https://ag5788.github.io/WebProgrammingI/homework2/">
+              <b>Homework 2 - Personal Portfolio</b> (This Page)
+            </a>
+            <br>
+            A page featuring a basic intro, and some basic html styling tags.
+            <br>
+            <img src="assets/table.png" alt="The table on the page">
+            <img src="assets/list.png" alt="A list on the page">
+          </div>
+        </div>
+        <h2 id="education">Education and Experience</h2>
+        <table>
+          <thead>
+          <tr>
+            <td>Status</td>
+            <td>Degree</td>
+            <td>Location</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              Finished
+            </td>
+            <td>
+              Associates in Computer Science
+            </td>
+            <td>Community College</td>
+          </tr>
+          <tr>
+            <td>
+              Pursuing
+            </td>
+            <td>
+              Bachelors in Computer Science
+            </td>
+            <td>
+              This University
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Typescript</li>
+          <li>Java</li>
+          <li>
+            Experience in many web projects both for fun and freelance.
+            I linked my real portfolio in the submission comments if you're interested.
+          </li>
+        </ul>
+
+        <h2 id="download">Download Me</h2>
+        <a href="assets/Download%20Me.pdf" download>Download Me</a>
+      </div>
+      <div class="footer">
+        <h2 id="contact">Contact</h2>
+        <a href="mailto:dummy@example.com">dummy@example.com</a>
+        <a href="tel:+11111111111">+1 (111) 111-1111</a>
+        <a href="https://github.com/ag5788">GitHub</a>
+      </div>
+    </div>
+  </body>
+</html>
