@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Aiden - Homework 1</title>
+    <style>
+      table, td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .limit {
+        max-width: 800px;
+        margin: 0 auto 50vh auto;
+      }
+      
+      @media (max-width: 480px) {
+        .larger-image {
+          max-width: calc(100vw - 60px)
+        }
+      }
+      .scaled {
+        transform: scale(0.5);
+        display: inline-block;
+        transition: transform 0.5s;
+      }
+      .scaled:hover {
+        transform: scale(1.5);
+      }
+
+      img {
+        transition: transform 0.2s;
+      }
+      img:hover {
+        transform: scale(1.025);
+      }
+
+      .relative {
+        position: relative;
+      }
+      .sticky {
+        position: sticky;
+        top: 0;
+      }
+
+      .grid > div {
+        border: 1px solid black;
+      }
+
+      a[download] {
+        padding: 0.15rem 0.25rem 0.15rem 0.25rem;
+        border-radius: 10px;
+        transition: background-color 0.2s;
+      }
+      a[download]:hover {
+        background-color: rgba(0, 0, 0, 10%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="limit">
+      <h1>Aiden</h1>
+      Computer Science Student
+      <div class="relative">
+        <h2 class="sticky">Intro</h2>
+        <p>
+          I am a Computer Science student who has been interested in computers for a long time. <br>
+          I have worked on many personal projects, and some freelancing.
+        </p>
+      </div>
+      <div class="relative">
+        <h2 class="sticky">Skills</h2>
+        <p>
+          I can do <b>bold</b> and <i>italics</i>.
+          <br>
+          and <div class="scaled">scaling on hover</div>
+          <br>
+          <div style="height: 300px; border: 1px solid black; display: flex; align-items: center; justify-content: center;">
+            <span>
+              Vertically & Horizontally aligned
+            </span>
+          </div>
+          <br>
+          <br>
+          <div class="grid" style="display: grid; border: black 1px solid; grid-template-columns: 1fr 1fr 3fr; grid-template-rows: 3fr 1fr 1fr; height: 300px;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          Outside of the class, I have done many things with web hosting, serverless computing,
+          and have made a few AI agents both for myself and clients.
+        </p>
+      </div>
+      <div class="relative">
+        <h2 class="sticky">Projects</h2>
+        <ul>
+          <li>
+            <a href="https://ag5788.github.io/WebProgrammingI/homework1/">
+              <b>Homework 1 - Personal Portfolio</b> (previous version of this page)
+            </a>
+            <br>
+            A page featuring a basic intro, and some basic html styling tags.
+          </li>
+          <li>
+            <a href="https://ag5788.github.io/WebProgrammingI/homework2/">
+              <b>Homework 2 - Personal Portfolio</b> (This Page)
+            </a>
+            <br>
+            A page featuring a basic intro, and some basic html styling tags.
+            <br>
+            <img src="assets/table.png" alt="The table on the page" class="larger-image">
+            <img src="assets/list.png" alt="A list on the page">
+          </li>
+        </ul>
+      </div>
+      <div class="relative">
+        <h2 class="sticky">Education and Experience</h2>
+        <table>
+          <thead>
+          <tr>
+            <td>Status</td>
+            <td>Degree</td>
+            <td>Location</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              Finished
+            </td>
+            <td>
+              Associates in Computer Science
+            </td>
+            <td>Community College</td>
+          </tr>
+          <tr>
+            <td>
+              Pursuing
+            </td>
+            <td>
+              Bachelors in Computer Science
+            </td>
+            <td>
+              This University
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Typescript</li>
+          <li>Java</li>
+          <li>
+            Experience in many web projects both for fun and freelance.
+            I linked my real portfolio in the submission comments if you're interested.
+          </li>
+        </ul>
+      </div>
+      <div class="relative">
+        <h2 class="sticky">Contact</h2>
+        <ul>
+          <li>
+            <a href="mailto:dummy@example.com">dummy@example.com</a>
+          </li>
+          <li>
+            <a href="tel:+11111111111">+1 (111) 111-1111</a>
+          </li>
+          <li>
+            <a href="https://github.com/ag5788">GitHub</a>
+          </li>
+        </ul>
+      </div>
+      <h2>Download Me</h2>
+      <a href="assets/Download%20Me.pdf" download>Download Me</a>
+    </div>
+  </body>
+</html>
