@@ -15,7 +15,18 @@ document.getElementById("download-button").addEventListener("click", () => {
  * @param {string} name
  */
 function showGreeting(name) {
-    return "Hello, my name is " + name + "! Welcome to my portfolio!"
+    let timeGreeting = "Good ";
+    const hour = new Date().getHours();
+    if(hour < 12) {
+        timeGreeting += "Morning";
+    } else {
+        if(hour <= 16) { // 4pm
+            timeGreeting += "afternoon";
+        } else {
+            timeGreeting += "evening";
+        }
+    }
+    return timeGreeting + ", my name is " + name + "! Welcome to my portfolio!"
 }
 
 document.getElementById("greeting").innerText = showGreeting(name);
