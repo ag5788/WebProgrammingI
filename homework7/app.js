@@ -6,8 +6,8 @@ let hasDownloadedResume = false;
 
 document.getElementById("download-button").addEventListener("click", () => {
     if(!hasDownloadedResume) {
-        alert('Your download is starting!');
         hasDownloadedResume = true;
+        setTimeout(() => alert('Your download has starting!'));
     }
 })
 
