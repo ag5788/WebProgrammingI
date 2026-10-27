@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <title>Aiden - Homework 8</title>
+    <title>Aiden - Homework 9</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
 
@@ -75,23 +75,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#intro">Intro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Education and Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
         </div>
       </div>
     </nav>
@@ -138,21 +122,24 @@
           and have made a few AI agents both for myself and clients.
 
 
-          <ul style="margin-top: 2em;" id="skill-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
+          <input type="text" id="skillSearch" class="form-control" style="max-width: 250px;" placeholder="Search skills">
+          <ul style="margin-top: 2em;" id="skill-list"></ul>
           <form id="add-skill">
             <input type="text" placeholder="Add a skill" id="new-skill"/>
             <button>Submit</button>
           </form>
+          <div id="skill-feedback" class="alert alert-danger mt-2" style="display: none;"></div>
 
 
         </p>
       </div>
       <div class="relative row" id="projects-area">
         <h2 class="sticky" id="projects">Projects</h2>
+        <div class="mb-2" id="project-sort-controls">
+          <button class="btn btn-sm btn-outline-primary" id="sort-earliest">Sort: Earliest Deadline</button>
+          <button class="btn btn-sm btn-outline-primary" id="sort-latest">Sort: Latest Deadline</button>
+        </div>
+        <div id="project-cards"></div>
       </div>
       <div class="relative row">
         <h2 class="sticky" id="experience">Education and Experience</h2>
@@ -213,6 +200,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
